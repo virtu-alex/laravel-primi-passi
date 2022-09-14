@@ -13,7 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/greeting', function () {
-    return '<h1>Hello World</h1>';
+Route::get('/', function () {
+    $saluto = 'Hello world';
+    return view('greeting.home', compact('saluto'));
 });
 
+Route::get('/phone', function () {
+    $numbers = [
+        '132153153',
+        '156951611',
+        '745123131',
+    ];
+    return view('phone.home', compact('numbers'));
+})->name('phone');
