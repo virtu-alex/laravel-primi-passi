@@ -20,6 +20,9 @@
                 <button>
                     <a href="{{ route('phone') }}">Phone</a>
                 </button>
+                <button>
+                    <a href="{{ route('list') }}">Grocery</a>
+                </button>
             </li>
         </ul>
     </header>

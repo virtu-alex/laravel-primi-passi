@@ -10,9 +10,9 @@
 
 <body>
 
-    @foreach ($numbers as $number)
+    @foreach ($lists as $list)
         <p>
-            <?= $number ?>
+            <?= $list ?>
         </p>
     @endforeach
 </body>

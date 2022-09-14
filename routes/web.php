@@ -26,3 +26,12 @@ Route::get('/phone', function () {
     ];
     return view('phone.home', compact('numbers'));
 })->name('phone');
+
+Route::get('/groceries', function () {
+    $lists = [
+        'Apples',
+        'Pears',
+        'Broccoli',
+    ];
+    return view('groceries.home', compact('lists'));
+})->name('list');
